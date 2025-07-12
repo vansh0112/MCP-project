@@ -45,7 +45,7 @@ class MinimalCalendarServer:
                             "description": {"type": "string", "description": "Event description"},
                             "start_datetime": {"type": "string", "description": "Start date and time in ISO format (e.g., 2024-12-25T10:00:00)"},
                             "end_datetime": {"type": "string", "description": "End date and time in ISO format (e.g., 2024-12-25T11:00:00)"},
-                            "timezone": {"type": "string", "description": "Timezone (e.g., UTC)", "default": "UTC"},
+                            "timezone": {"type": "string", "description": "Timezone (e.g., Asia/Kolkata for IST)", "default": "Asia/Kolkata"},
                             "attendees": {"type": "array", "items": {"type": "string"}, "description": "List of attendee email addresses"},
                             "location": {"type": "string", "description": "Event location"}
                         },
@@ -115,7 +115,7 @@ class MinimalCalendarServer:
         description = args.get('description', '')
         start_datetime = args.get('start_datetime')
         end_datetime = args.get('end_datetime')
-        timezone = args.get('timezone', 'UTC')
+        timezone = args.get('timezone', 'Asia/Kolkata')
         attendees = args.get('attendees', [])
         location = args.get('location', '')
         event = {
