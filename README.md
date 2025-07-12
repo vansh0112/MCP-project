@@ -15,7 +15,7 @@ This project provides an MCP-compatible server for interacting with Google Calen
 
 ## Prerequisites
 - Python 3.8+
-- A Google Cloud project with Calendar API (and Gmail API if needed) enabled
+- A Google Cloud project with Calendar API and Gmail API enabled
 - `credentials.json` (OAuth client credentials) downloaded from Google Cloud Console
 
 ---
@@ -85,7 +85,7 @@ If you are integrating this server with Claude Desktop, you need to configure it
 
 Try this combined workflow:
 
-- Create a calendar event for next Monday at 10 AM called "Project Kickoff" with description "Initial project meeting with the team" and invite vanshah0112@gmail.com and vvshah0112@gmail.com. Then send an email to both attendees with the meeting details.
+- Create a calendar event for next Monday at 10 AM called "Project Kickoff" with description "Initial project meeting with the team" and invite example1@example.com and example2@example.com. Then send an email to both attendees with the meeting details.
 
 ---
 ## Troubleshooting
